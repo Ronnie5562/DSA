@@ -1,4 +1,6 @@
 package BinarySearch;
+// The floor of an array with target X, is the biggest number in that array that is smaller than or equals to X.
+// This problem is solved using the concept of binary search !!!!!
 
 public class FindArrayFloor {
     public static void main(String[] args) {
