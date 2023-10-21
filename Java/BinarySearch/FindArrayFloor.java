@@ -5,7 +5,7 @@ package BinarySearch;
 public class FindArrayFloor {
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 9, 14, 16, 18, 21, 23, 29, 30};
-        int target = 2;
+        int target = 14;
         int ans = findFloor(arr, target);
         System.out.println(ans >= 0 ? "Array Floor: " + arr[ans] : "The target is smaller than every element is the array, so the array does not have a floor at this particular target.");
     }
@@ -27,6 +27,6 @@ public class FindArrayFloor {
                 return mid;
             }
         }
-        return arr.length - 1 >= end ? end : -1;
+        return end;
     }
 }
