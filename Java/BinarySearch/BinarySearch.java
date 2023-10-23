@@ -1,7 +1,5 @@
 package BinarySearch;
 
-import javax.xml.transform.stream.StreamSource;
-
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {-27, -5, 0, 2, 4, 5, 6, 8, 12, 15, 45, 67, 84, 99, 200, 567};
