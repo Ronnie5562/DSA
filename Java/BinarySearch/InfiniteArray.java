@@ -5,11 +5,11 @@
 
 // Now, Let's explain how we're going to solve this problem.
 /*
-*  Originally, when solving problems using binary search, we first of all get the mid point of the larger array and check if
-*  our target value is either on the right side or on the left side, then we change our focus the the side which it's on,
+*  Originally, when solving problems using binary search, we first of all get the mid-point of the larger array and check if
+*  our target value is either on the right side or on the left side, then we change our focus to the side which it's on,
 *  get the mid of that area and keep on repeating the process till we find our target.
 *
-*  But, in this case, we cannot get the initial mid point, so we cannot use the same approach. What if we reverse the binary search algorithm 🤔💭 ?
+*  But, in this case, we cannot get the initial mid-point, so we cannot use the same approach. What if we reverse the binary search algorithm 🤔💭 ?
 *  Instead of reducing our search space, we can start from the first two items (sub-array) of the array and start increasing our search space (sub-array) t
 *  ill we get the sub-array that has our target in it. Let's Goooo....
 * */
@@ -20,19 +20,27 @@ public class InfiniteArray {
     public static void main(String[] args) {
         int[] arr = {-27, -5, 0, 2, 4, 5, 6, 8, 12, 15, 45, 67, 84, 99, 200, 567};
         int target = 15;
-        int ans = binarySearch(arr, target);
+        int ans = SearchInfiniteArray(arr, target);
         System.out.println(ans);
     }
 
 
-    public static int SearchArray() {
-        return 1;
+    public static int SearchInfiniteArray(int[] arr, int target) {
+        // This method find the range our target value lies in and pass the range [start and end] into the binary search method.
+        int start = 0;
+        int end = 1;
+
+        while (target > arr[end]) {
+            int newStart = end + 1;
+            end = end + (end - start + 1) * 2;
+
+            start = newStart;
+        }
+
+        return binarySearch(arr, target, start, end);
     }
 
-    public static int binarySearch(int[] arr, int target) {
-        int start = 0;
-        int end = arr.length - 1;
-
+    public static int binarySearch(int[] arr, int target, int start, int end) {
         while (start <= end) {
             int mid = start + (end - start) / 2;
 
