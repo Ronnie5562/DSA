@@ -26,7 +26,7 @@ public class InfiniteArray {
 
 
     public static int SearchInfiniteArray(int[] arr, int target) {
-        // This method find the range our target value lies in and pass the range [start and end] into the binary search method.
+        // This method find the range our target value lies in and pass the range [start and end] into the binarySearch method.
         int start = 0;
         int end = 1;
 
