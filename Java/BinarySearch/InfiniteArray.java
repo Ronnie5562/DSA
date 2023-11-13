@@ -19,7 +19,7 @@ package BinarySearch;
 public class InfiniteArray {
     public static void main(String[] args) {
         int[] arr = {-27, -5, 0, 2, 4, 5, 6, 8, 12, 15, 45, 67, 84, 99, 200, 567};
-        int target = 15;
+        int target = -5;
         int ans = SearchInfiniteArray(arr, target);
         System.out.println(ans);
     }
@@ -28,7 +28,7 @@ public class InfiniteArray {
     public static int SearchInfiniteArray(int[] arr, int target) {
         // This method find the range our target value lies in and pass the range [start and end] into the binarySearch method.
         int start = 0;
-        int end = 1;
+        int end = arr.length - 1;
 
         while (target > arr[end]) {
             int newStart = end + 1;
