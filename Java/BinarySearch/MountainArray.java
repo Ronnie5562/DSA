@@ -23,6 +23,6 @@ public class MountainArray {
             }
         }
 
-        return start;
+        return start; // we can actually return start/end because at the point where we get our answer, start and will point to the same value.
     }
 }
