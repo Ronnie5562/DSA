@@ -3,9 +3,7 @@
 // For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
 package LeetCode;
 
-import java.math.BigInteger;
-
-public class Squareroot {
+public class squareRootSolution {
     public static void main(String[] args) {
         int answer = mySqrt(2147395599);
         System.out.println(answer);
