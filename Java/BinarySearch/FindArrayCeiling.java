@@ -14,8 +14,7 @@ public class FindArrayCeiling {
         int end = arr.length - 1;
 
         while (start <= end) {
-            // find the middle element
-
+            // find the mid element
             int mid = start + (end - start) / 2;
 
             if (target < arr[mid]) {
