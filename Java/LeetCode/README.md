@@ -2,7 +2,7 @@
 
 # Let's do this 💪💪💪
 
-# Videos:
+# Learning Videos:
 - [Linear Search](https://youtu.be/_HRA37X8N_Q)
 - [Binary Search](https://youtu.be/f6UU7V3szVw)
 - [Binary Search Questions](https://youtu.be/W9QJ8HaRvJQ)
