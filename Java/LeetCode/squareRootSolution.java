@@ -5,7 +5,7 @@ package LeetCode;
 
 public class squareRootSolution {
     public static void main(String[] args) {
-        int answer = mySqrt(2147395599);
+        int answer = mySqrt(4);
         System.out.println(answer);
     }
 
